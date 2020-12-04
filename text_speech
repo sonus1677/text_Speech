@@ -1,0 +1,12 @@
+import gtts
+from gtts import gTTS
+from playsound import playsound
+
+Message = ""
+def Text_to_speech(Message):
+
+    speech = gTTS(text=Message)
+    speech.save('anjali.mp3')
+    playsound("anjali.mp3")
+
+Text_to_speech("i am using pycharm")
